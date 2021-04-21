@@ -675,6 +675,13 @@ button {
 
 }
 
+.footer-blok {
+  flex-basis: calc((50%-45px)/2);
+}
+
+.footer-blok:last-child {
+  flex-basis: calc(50%-15);
+}
 
 .footer-container {
   padding-top: 60px;
