@@ -14,7 +14,7 @@
   --bg-adress-color: rgba(255, 255, 255, 0.6);
   --logo-header-color: #000;
   --icon-color: #AFB1B8;
-  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --animation: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -110,7 +110,7 @@ ul {
   text-decoration-line: none;
   padding: 32px 0;
   color: var(--title-color);
-  transition: var(--animation);
+
 }
 
 .list-nav a::after {
@@ -124,15 +124,8 @@ ul {
    background: #2196F3;
    border-radius: 2px;
 
-   opacity: 0;
-   transition: opacity var(--animation);
+   transition: opacity 250ms var(--animation);
 }
-
-.list-nav a:hover::after {
-  display: block;
-  opacity: 1;
-}
-
 
 
 .list-nav {
@@ -151,7 +144,7 @@ ul {
   align-items: center;
   justify-content: center;
   padding: 32px 0;
-  transition: var(--animation);
+
 }
 
 .email-link::before {
@@ -300,19 +293,6 @@ ul {
   padding-bottom: 32px;
 }
 
-
-/*item-nav::before {
-  width: 16px;
-  height: 12px;
-  content: "";
-  background-image: url();
-  margin-right: 10px;
-}*/
-
-
-
-
-
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -366,11 +346,6 @@ ul {
   color: var(--bg-color);
 }
 
-
-
-
-
-
 .main-section {
   font-size: 14px;
 	line-height: 1.71;
@@ -420,7 +395,7 @@ ul {
   display: flex;
   padding: 27px 82px;
   background: rgba(47, 48, 58, 0.8);
-  opacity: 1;
+  justify-content: center;
 }
 
 
@@ -471,11 +446,11 @@ ul {
   fill: var(--icon-color);
 
 }
-/*  */
+
 .icon.foot {
   fill: var(--bg-color);
 }
-/**/
+
 .welcom-list .icon-social-link {
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -496,7 +471,7 @@ ul {
   height: 44px;
   border-radius: 50%;
   background-color: var(--bg-color);
-  transition: var(--animation);
+  transition: background-color 250ms var(--animation);
 }
 
 .icon-social-link:hover .icon,
@@ -515,7 +490,7 @@ ul {
   fill: var(--icon-color);
   border: 2px solid var(--icon-color);
   border-radius: 4px;
-  transition: var(--animation);
+  transition: fill 250ms var(--animation);
 }
 
 .icon-clients {
@@ -622,18 +597,24 @@ ul {
 }
 
 button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
   cursor: pointer;
   padding: 6px 22px;
   border: none;
   border-radius: 6px;
-  transition: var(--animation);
+  transition: bacgraun-color 250ms var(--animation);
 }
 
 .list-button .item-button {
   display: inline-block;
-  font-weight: 500;
-  line-height: 1.62;
-  text-align: center;
   
   border: 0;
   color: var(--title-color);
@@ -668,19 +649,21 @@ button {
 
               /*footer*/
 
-.container .footer-list {
-  display: inline-block;
-  width: calc((50%-45px)/2);
-  background-color: rgb(136, 136, 108);
+.footer-container .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 
 }
 
+
 .footer-blok {
-  flex-basis: calc((50%-45px)/2);
+  flex-basis: calc((50% - 45px) / 2);
+
 }
 
 .footer-blok:last-child {
-  flex-basis: calc(50%-15);
+  flex-basis: calc(50% - 15px);
 }
 
 .footer-container {
@@ -704,9 +687,6 @@ button {
   color: var(--bg-color);
 }
 
-.address {
-  margin-right: 70px;
-}
 
 .addres-footer {
   width: 231px;
@@ -738,7 +718,8 @@ button {
 .welcom-list {
   display: block;
   width: 206px;
-  margin-top: 12px;
+  
+  
 }
 
 .welcom-page {
@@ -797,7 +778,7 @@ button {
   background: rgba(33, 150, 243, 0.9);
   opacity: 1;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms var(--animation)
 }
 
 .text-portfolio {
@@ -833,13 +814,14 @@ button {
 
 
 .text-paragraf {
+  width: 100%;
   position: relative;
   overflow: hidden;
   
 }
 
 .menu-project {
-  width: 370px;
+  width: 100%;
   padding: 20px 24px;
 }
 
@@ -875,7 +857,7 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: var(--animation);
+  transition: transform 250ms var(--animation);
 }
 
 .close-modal {
@@ -906,6 +888,19 @@ button {
 .icon-close {
   width: 11px;
   height: 11px;
+}
+
+.modal-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 40px;
+  color: #212121;
+
 }
 
 

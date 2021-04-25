@@ -341,16 +341,18 @@
     <!--Футер адресс-->
     <footer class="footer-container">
       <div class="container footer-list">
-        <div class="address footer-blok">
-          <a class="logo" href="./index.html" >Web<span class="logo-studio-white">Studio</span></a>
-          <div class="addres-footer">
-            <address class="contact-nav-color">
-              <p class="address-nav">г. Киев, пр-т Леси Украинки, 26</p>
-              <ul class="contact-nav footer">
-                <li class="link-footer"><a href="mailto:info@example.com">info@example.com</a></li>
-                <li class="link-footer"><a href="tel:+380991111111">+380991111111</a></li>
-              </ul>
-            </address>
+        <div class="address">
+          <div class="footer-blok">
+            <a class="logo" href="./index.html" >Web<span class="logo-studio-white">Studio</span></a>
+            <div class="addres-footer">
+                <address class="contact-nav-color">
+                <p class="address-nav">г. Киев, пр-т Леси Украинки, 26</p>
+                <ul class="contact-nav footer">
+                  <li class="link-footer"><a href="mailto:info@example.com">info@example.com</a></li>
+                  <li class="link-footer"><a href="tel:+380991111111">+380991111111</a></li>
+                </ul>
+              </address>
+            </div>
           </div>
         </div>
         <div class="welcom-list footer-blok">
@@ -387,7 +389,7 @@
             </ul> 
         </div>
         <div class="subscribe-list footer-blok">
-
+          
         </div>
       </div>
     </footer>
@@ -399,10 +401,25 @@
             <use href="./imeges/sprite.close.svg#icon-Vector"></use>
           </svg>
         </button>
-        <p>
+        <form class="modal-form">
+          <p class="modal-text">
+            Оставьте свои данные, мы вам перезвоним
+          </p>
+          <label for="name">Имя</label>
+          <input type="text" name="name" id="name"/>
 
-        </p>
-       
+          <label for="tel">Телефон</label> 
+          <input type="text" name="tel" id="tel"/>
+
+          <label for="email">Почта</label>
+          <input type="text" name="email" id="email"/>
+
+          <label for="coment">Комментарий</label>
+          <input type="text" name="coment" id="coment"/>
+
+          <input type="checkbox" name="" value="" id=""
+          <button type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./JS/modal.js"></script>
