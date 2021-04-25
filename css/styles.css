@@ -113,7 +113,7 @@ ul {
 
 }
 
-.list-nav a::after {
+.list-nav .current::after {
    content: "";
    position: absolute;
    left: 0;
@@ -124,7 +124,7 @@ ul {
    background: #2196F3;
    border-radius: 2px;
 
-   transition: opacity 250ms var(--animation);
+   transition: background 250ms var(--animation);
 }
 
 
