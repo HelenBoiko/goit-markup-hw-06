@@ -390,7 +390,7 @@
           <form class="footer-form">
             <h3 class="sign-form">Подпишитесь на рассылку</h3>
             <div class="mail-form">
-            <label for="e_mail"></label>
+            
             <input type="e_mail" name="e_mail" id="e_mail" placeholder="E-mail">
             <button type="submit">Подписаться</button>
             </div>
@@ -406,35 +406,54 @@
             <use href="./imeges/sprite.close.svg#icon-Vector"></use>
           </svg>
         </button>
+
         <form class="modal-form">
           <p class="modal-text">
             Оставьте свои данные, мы вам перезвоним
           </p>
           <div class="form-field">
-          <label for="name">Имя</label>
-          <input
-          type="text" 
-          name="name" 
-          id="name"
-          />
+          <label for="name" class="form-label">Имя</label>
+          <input type="text" class="form-input" name="name" id="name" />
+          <span class="form-icon">
+            <svg class="form-name-icon">
+              <use href="./imeges/icons.svg#icon-person-modal">
+            
+              </use>
+            </svg>
+          </span>
+          
           </div>
 
           <div class="form-field">
-          <label for="tel">Телефон</label> 
+          <label for="tel" class="form-label">Телефон</label> 
           <input
-           type="text" 
+           type="text" class="form-input"
            name="tel" 
            id="tel"
            />
+          <span class="form-icon">
+            <svg class="form-name-icon">
+              <use href="./imeges/icons.svg#icon-phone-modal">
+            
+              </use>
+            </svg>
+          </span>
           </div>
 
           <div class="form-field">
-          <label for="email">Почта</label>
+          <label for="email" class="form-label">Почта</label>
           <input 
-          type="text" 
+          type="text" class="form-input"
           name="email" 
           id="email"
           />
+          <span class="form-icon">
+            <svg class="form-name-icon">
+              <use href="./imeges/icons.svg#icon-email-modal">
+
+              </use>
+            </svg>
+          </span>
           </div>
 
           <div class="form-field">
