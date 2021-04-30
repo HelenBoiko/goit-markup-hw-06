@@ -837,6 +837,37 @@ button {
   
 }
 
+.checkbox {
+
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox:checked + .icon {
+border-color: transparent;
+background-color: var(--accent-link-color);
+background-image: url("../imeges/icon-check.svg");
+background-size: contain;
+background-origin: padding-box;
+}
+
+.box-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15x;
+  margin-right: 7px;
+
+  border: 2px solid #212121;
+  border-radius: 4px;
+
+}
 
 
 
