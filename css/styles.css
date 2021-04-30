@@ -837,6 +837,17 @@ button {
   
 }
 
+.label-box {
+  font-family: Roboto;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 24px;
+  line-height: 146%;
+  align: Left;
+  vertical-align: Top;
+  letter-spacing: 3%;
+}
+
 .checkbox {
 
   position: absolute;
@@ -850,7 +861,7 @@ button {
   overflow: hidden;
 }
 
-.checkbox:checked + .icon {
+.checkbox:checked + .box-icon {
 border-color: transparent;
 background-color: var(--accent-link-color);
 background-image: url("../imeges/icon-check.svg");
@@ -861,7 +872,7 @@ background-origin: padding-box;
 .box-icon {
   display: inline-block;
   width: 16px;
-  height: 15x;
+  height: 15px;
   margin-right: 7px;
 
   border: 2px solid #212121;
