@@ -1105,10 +1105,9 @@ button {
 
 
 .modal-link {
-
-  font-size: 14px
-  line-height: 24px
-  letter-spacing: 3%
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 3%;;
   text-decoration: underline;
   color: var(--accent-link-color);
   
